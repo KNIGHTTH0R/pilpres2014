@@ -249,9 +249,9 @@ class Pilpres:
     # specify penamaan file based on user options
     if self.file: fp = open(self.file, "a")
     if self.save:
-      bread = [propinsi[0]]
-      if self.tipe == "da1": bread += kabupaten[0] + kecamatan[0]
-      if self.tipe == "db1": bread += kabupaten[0]
+      bread = [self.tipe, propinsi[0]]
+      if self.tipe == "da1": bread += [kabupaten[0], kecamatan[0]]
+      if self.tipe == "db1": bread.append(kabupaten[0])
       if self.tipe == "c1" and self.only:
         try:
           if kabupaten[0][0] != "-": bread.append(kabupaten[0])
