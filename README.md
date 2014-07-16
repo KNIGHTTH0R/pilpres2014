@@ -2,7 +2,7 @@ pilpres2014
 ===========
 
 Pilpres 2014 KPU C1 DA1 DB1 Data Scrapper
-<p>
+<pre><code>
  python pilpres.py --tipe c1
  return: prop,prop_id,kab,kab_id,kec,kec_id,kel,kel_id,tps_id,kode_file_c1_ke_N
 
@@ -37,4 +37,4 @@ Pilpres 2014 KPU C1 DA1 DB1 Data Scrapper
 
  python pilpres.py --file <nama_file.txt>
  -> menyimpan hasil crawl ke spesifik file
-</p>
+</code></pre>
